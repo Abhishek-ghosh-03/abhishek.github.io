@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/mediaquery.css">
+    <style>
+        .skills {
+            max-width: 68.75rem;
+            margin: auto;
+            text-align: center;
+            margin-top: 2.5rem;
+        }
+
+        .skill-header {
+            margin-bottom: 1rem;
+        }
+
+        .skills-wrapper img {
+            padding: 1.25rem;
+        }
+
+        .icon {
+            width: 11.875rem;
+            height: 11.25rem;
+        }
+
+        .icon-card {
+            width: 300px;
+            height: 120px;
+            background-color: #faf6f6;
+            border-radius: 50px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+            margin:30px;
+            transform: perspective(1000px) rotateX(9deg) rotateY(9deg);
+            animation: rotateDevice 40s linear infinite;
+        }
+
+        @keyframes rotateDevice {
+            0% {
+                transform: perspective(1000px) rotateX(10deg) rotateY(-10deg);
+            }
+
+            50% {
+                transform: perspective(1000px) rotateX(-5deg) rotateY(10deg);
+            }
+
+            65% {
+                transform: perspective(1000px) rotateX(0deg) rotateY(10deg);
+            }
+
+            80% {
+                transform: perspective(1000px) rotateX(5deg) rotateY(-10deg);
+                transition: ease-in-out;
+            }
+
+            100% {
+                transform: perspective(2000px) rotateX(10deg) rotateY(-10deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><span onclick="location='/'">
+                Abhishek Ghosh
+            </span></div>
+        <div>
+            <ul class="nav-links">
+                <li>
+                    <a href="/about">About</a>
+                </li>
+                <li>
+                    <a href="/experience">Experience</a>
+                </li>
+                <li>
+                    <a href="/projects">Projects</a>
+                </li>
+                <li>
+                    <a href="/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            Abhishek Ghosh
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="/about" onclick="toggleMenu()">About</a></li>
+                <li><a href="/experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="/projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="/contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section class="skills" id="skills">
+        <h2 class="skill-header">My Top Skills</h2>
+
+        <div class="skills-wrapper">
+            <div class="first-set animate__animated animate__pulse">
+                <p>paragraph 1</p>
+                <p>paragraph 1</p>
+                <p>paragraph 1</p>
+            </div>
+
+            <div class="second-set animate__animated animate__pulse">
+                <p>paragraph 1</p>
+                <p>paragraph 1</p>
+                <p>paragraph 1</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

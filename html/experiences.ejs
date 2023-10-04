@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/mediaquery.css">
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><span  onclick="location='/'">
+            Abhishek Ghosh
+            </span></div>
+        <div>
+            <ul class="nav-links">
+                <li>
+                    <a href="/about">About</a>
+                </li>
+                <li>
+                    <a href="/experience">Experience</a>
+                </li>
+                <li>
+                    <a href="/projects">Projects</a>
+                </li>
+                <li>
+                    <a href="/contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">
+            Abhishek Ghosh
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="/about" onclick="toggleMenu()">About</a></li>
+                <li><a href="/experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="/projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="/contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
